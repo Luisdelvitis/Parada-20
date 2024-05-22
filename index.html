@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleição</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Eleições municipais 2024</h1>
+        <form id="votingForm">
+            <label>
+                <input type="radio" name="vote" value="22 João Passarinho">
+                22 João Passarinho
+            </label><br>
+            <label>
+                <input type="radio" name="vote" value="13 Zé da Padaria">
+                13 Zé da Padaria
+            </label><br>
+            <label>
+                <input type="radio" name="vote" value="17 Markinho">
+                17 Markinho
+            </label><br>
+            <label>
+                <input type="radio" name="vote" value="30 Cristiane Lopes">
+                30 Cristiane Lopes
+            </label><br>
+            <label>
+                <input type="radio" name="vote" value="Nulo/Branco">
+                Nulo/Branco
+            </label><br><br>
+            <button type="button" onclick="submitVote()">Votar</button>
+        </form>
+        <p id="message"></p>
+        <h2>Escolha a cor de fundo para melhor vizualização:</h2>
+        <button onclick="changeBackgroundColor('grey')">Cinza</button>
+        <button onclick="changeBackgroundColor('lightgray')">Cinza Claro</button>
+        <button onclick="changeBackgroundColor('yellow')">Amarelo</button>
+        <button onclick="changeBackgroundColor('red')">Vermelho</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
