@@ -3,42 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eleição</title>
+    <title>Eleições municipais 2024</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    
 </head>
 <body>
     <div class="container">
-        <h1>Eleições municipais 2024</h1>
-        <form id="votingForm">
+        <h1>Vote no seu candidato (a)</h1>
+        <form id="formularioVotacao">
             <label>
-                <input type="radio" name="vote" value="22 João Passarinho">
+                <input type="radio" name="voto" value=" 22 João Passarinho">
                 22 João Passarinho
-            </label><br>
+            </label><br><br>
             <label>
-                <input type="radio" name="vote" value="13 Zé da Padaria">
+                <input type="radio" name="voto" value="13 Zé da Padaria">
                 13 Zé da Padaria
-            </label><br>
+            </label><br><br>
             <label>
-                <input type="radio" name="vote" value="17 Markinho">
+                <input type="radio" name="voto" value="17 Markinho">
                 17 Markinho
-            </label><br>
+            </label><br><br>
             <label>
-                <input type="radio" name="vote" value="30 Cristiane Lopes">
+                <input type="radio" name="voto" value="30 Cristiane Lopes">
                 30 Cristiane Lopes
-            </label><br>
+            </label><br><br>
             <label>
-                <input type="radio" name="vote" value="Nulo/Branco">
+                <input type="radio" name="voto" value="Nulo/Branco">
                 Nulo/Branco
             </label><br><br>
-            <button type="button" onclick="submitVote()">Votar</button>
+            <button type="button" onclick="enviarVoto()">Votar</button>
         </form>
-        <p id="message"></p>
-        <h2>Escolha a cor de fundo para melhor vizualização:</h2>
-        <button onclick="changeBackgroundColor('grey')">Cinza</button>
-        <button onclick="changeBackgroundColor('lightgray')">Cinza Claro</button>
-        <button onclick="changeBackgroundColor('yellow')">Amarelo</button>
-        <button onclick="changeBackgroundColor('red')">Vermelho</button>
+        <h2>Escolha a cor de fundo:</h2>
+        <button onclick="mudarCorDeFundo('Black')">Preto</button>
+        <button onclick="mudarCorDeFundo('red')">Vermelho</button>
+        <button onclick="mudarCorDeFundo('blue')">Azul</button>
+        <button onclick="mudarCorDeFundo('yellow')">Amarelo</button>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
