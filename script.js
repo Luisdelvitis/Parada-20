@@ -1,15 +1,19 @@
-function submitVote() {
-    const form = document.getElementById('votingForm');
-    const message = document.getElementById('message');
-    const selectedOption = form.vote.value;
+document.addEventListener('DOMContentLoaded', (event) => {
+    function enviarVoto() {
+        const formulario = document.getElementById('formularioVotacao');
+        const opcaoSelecionada = formulario.voto.value;
 
-    if (selectedOption) {
-        message.textContent = `Você votou no candidato (a): ${selectedOption}`;
-    } else {
-        message.textContent = 'Por favor, selecione uma opção para votar.';
+        if (opcaoSelecionada) {
+            prompt(`Você votou no canditado (a): ${opcaoSelecionada}, digite -SIM- para confirmar`);
+        } else {
+            alert('Por favor, selecione uma opção para votar nas eleições 2024.');
+        }
     }
-}
 
-function changeBackgroundColor(color) {
-    document.body.style.backgroundColor = color;
-}
+    function mudarCorDeFundo(cor) {
+        document.body.style.backgroundColor = cor;
+    }
+
+    window.enviarVoto = enviarVoto;
+    window.mudarCorDeFundo = mudarCorDeFundo;
+});
